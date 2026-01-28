@@ -1,0 +1,193 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    padding: 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.listlink {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.listlink a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.listlink a:hover {
+    border-bottom: 2px solid rgb(237, 201, 22);
+}
+
+header {
+    background-image: url(background.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0 0 1rem 0;
+}
+
+.linkhome {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.containerarticle {
+    width: 60%;
+    flex: 1;
+}
+
+article {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+article img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+article h4 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.btnarticle {
+    background-color: rgba(41, 38, 38, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btnarticle:hover {
+    background-color: rgba(32, 32, 32, 0.9);
+}
+
+aside {
+    background-color: #e9d32d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 2rem;
+}
+
+footer {
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    height: 30vh;
+    margin-top: 100px;
+}
+
+.immicon {
+    width: 50px;
+    height: 50px;
+    animation-duration: 2s;
+    animation-name: immicon;
+    animation-iteration-count: infinite;
+    position: fixed;
+    top: 80vh;
+}
+
+@keyframes immicon {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .link {
+        font-size: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .containerarticle {
+        display: block;
+        width: 100%;
+    }
+    
+    aside {
+        width: 100%;
+        display: block;
+    }
+    
+    main {
+        display: block;
+    }
+    
+    article {
+        margin: 50px 0;
+    }
+    
+    footer {
+        display: block;
+    }
+}
